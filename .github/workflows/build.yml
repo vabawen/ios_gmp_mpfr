@@ -24,13 +24,11 @@ jobs:
           mkdir -p sources
           cd sources
 
-          echo "Downloading GMP..."
-          wget https://gmplib.org/download/gmp/gmp-6.3.0.tar.xz
-          tar xf gmp-6.3.0.tar.xz
+          echo "Extracting GMP..."
+          tar xf ${GITHUB_WORKSPACE}/third_party/gmp-6.3.0.tar.xz
 
-          echo "Downloading MPFR..."
-          wget https://www.mpfr.org/mpfr-current/mpfr-4.2.2.tar.xz
-          tar xf mpfr-4.2.2.tar.xz
+          echo "Extracting MPFR..."
+          tar xf ${GITHUB_WORKSPACE}/third_party/mpfr-4.2.2.tar.xz
 
           echo "✅ Sources ready"
 
